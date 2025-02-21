@@ -39,7 +39,7 @@ Current version: 3.
 msgbox, , Fisch Cream's Macro, % message, 60
 
 
-
+/*
 ; Read the "sub_confirmation" value from the Settings.ini file (default is 0)
 IniRead, sub_confirmation, Settings.ini, Fisch, sub_confirmation, 0
 
@@ -59,9 +59,10 @@ If (!sub_confirmation) {
     }
     Sleep 1000
 }
+
 ; If user has subscribed, write "1" to "sub_confirmation" in the settings.ini
 IniWrite, 1, Settings.ini, Fisch, sub_confirmation
-
+*/
 ; Read the "Control" value from the Settings.ini (default is 0) and set it for the macro's control parameter
 ;IniRead, Control, Settings.ini, Fisch, Control, 0 
 ;IniWrite, %Control%, Settings.ini, Fisch, Control ; Autosave for Control
